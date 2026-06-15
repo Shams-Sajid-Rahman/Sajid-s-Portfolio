@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shams Sajid Rahman — AI/ML Researcher & Full-Stack Engineer, Dhaka, Bangladesh" />
+  <title>Shams Sajid Rahman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#hero" class="nav-logo">SSR</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" onclick="closeNav()">About</a></li>/
+    <li><a href="#skills" onclick="closeNav()">Skills</a></li>
+    <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+    <li><a href="#research" onclick="closeNav()">Research</a></li>
+    <li><a href="#publications" onclick="closeNav()">Publications</a></li>
+    <li><a href="#leadership" onclick="closeNav()">Leadership</a></li>
+    <li><a href="#contact" class="nav-cta" onclick="closeNav()">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="ham" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="hero-inner">
+    <div class="hero-photo-wrap">
+      <img src="ssr.jpeg" class="hero-photo" alt="Shams Sajid Rahman" />
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Dhaka Cantonment, Dhaka-1206, Bangladesh</div>
+      <h1 class="hero-name">Shams Sajid<br>Rahman</h1>
+      <div class="hero-role">
+        <span id="tw"></span><span class="cursor"></span>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in Touch &rarr;</a>
+        <a href="#projects" class="btn btn-ghost">View My Work</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="sec">
+    <div class="about-grid">
+      <div class="about-body fi">
+        <div class="sec-tag">About Me</div>
+        <h2 class="sec-title">Building at the frontier of AI &amp; software</h2>
+        <div class="sec-rule"></div>
+        <p>I'm a Computer Science &amp; Engineering graduate with a focus on <strong>machine learning,
+          deep learning, natural language processing, and full-stack software engineering</strong>. Experienced in designing and implementing AI-powered applications, multi-model regression systems, and scalable backend APIs</p>
+        <p>I contributed to work accepted at <strong>IEEE QPAIN 2026</strong> on Alzheimer's disease classification, and I'm currently wrapping up my capstone on <strong>text-to-medical-video generation</strong> using diffusion models and LoRA fine-tuning.</p>
+        <p>Currently seeking <strong>AI/ML and software engineering opportunities</strong> where I can contribute to meaningful products and grow alongside a strong team. Recognized for technical leadership and community involvement through the NSU ACM Student Chapter.</p>
+      </div>
+      <div class="stats fi">
+        <div class="stat">
+          <div class="stat-n">3.39</div>
+          <div class="stat-l">CGPA / 4.00 &middot; NSU</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">4 yr</div>
+          <div class="stat-l">NSU ACM Student Chapter</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="sec">
+    <div class="sec-tag fi">Technical Stack</div>
+    <h2 class="sec-title fi">Skills &amp; Technologies</h2>
+    <div class="sec-rule fi"></div>
+    <div class="skill-groups fi">
+      <div>
+        <div class="sg-label">ML &amp; AI</div>
+        <div class="tags">
+          <span class="tag em">PyTorch</span>
+          <span class="tag em">TensorFlow</span>
+          <span class="tag em">Scikit-learn</span>
+          <span class="tag em">Hugging Face Transformers</span>
+          <span class="tag em">Hugging Face Diffusers</span>
+          <span class="tag em">PEFT &amp; LoRA</span>
+          <span class="tag em">LangChain</span>
+          <span class="tag em">Google Gemini API</span>
+          <span class="tag em">CBAM</span>
+          <span class="tag em">MC-Dropout</span>
+        </div>
+      </div>
+      <div>
+        <div class="sg-label">Languages</div>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">C++</span>
+          <span class="tag">C</span>
+          <span class="tag">Java</span>
+          <span class="tag">Dart</span>
+          <span class="tag">SQL</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+        </div>
+      </div>
+      <div>
+        <div class="sg-label">Backend &amp; Frontend</div>
+        <div class="tags">
+          <span class="tag">React.js</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">RESTful API Design</span>
+          <span class="tag">MVC Architecture</span>
+          <span class="tag">Flutter (Dart)</span>
+          <span class="tag">EJS</span>
+        </div>
+      </div>
+      <div>
+        <div class="sg-label">Databases &amp; Tools</div>
+        <div class="tags">
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Firebase Realtime DB</span>
+          <span class="tag">Git &amp; GitHub</span>
+          <span class="tag">Jupyter Notebook</span>
+          <span class="tag">Google Colab</span>
+          <span class="tag">VS Code</span>
+        </div>
+      </div>
+      <div>
+        <div class="sg-label">Data Science</div>
+        <div class="tags">
+          <span class="tag">Pandas</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">Seaborn</span>
+          <span class="tag">GridSearchCV</span>
+          <span class="tag">Cross-Validation</span>
+          <span class="tag">Model Evaluation Metrics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="sec">
+    <div class="sec-tag fi">Portfolio</div>
+    <h2 class="sec-title fi">Featured Projects</h2>
+    <div class="sec-rule fi"></div>
+    <div class="proj-grid">
+
+      <div class="proj-card fi">
+        <div class="proj-ico">&#128200;</div>
+        <div class="proj-name">Stock Price Prediction</div>
+        <div class="proj-type">ML Regression Benchmark</div>
+        <p class="proj-desc">Comparative benchmark evaluating 6 regression algorithms — SVR, Random Forest, Gradient Boosting, KNN, Bayesian Ridge, Decision Tree — with GridSearchCV tuning and k-fold cross-validation. Gradient Boosting achieved the best RMSE and R&sup2; across all candidates.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Scikit-learn</span>
+          <span class="proj-tag">Pandas</span>
+          <span class="proj-tag">NumPy</span>
+          <span class="proj-tag">Matplotlib</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/Shams-Sajid-Rahman" class="proj-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="proj-card fi">
+        <div class="proj-ico">&#129302;</div>
+        <div class="proj-name">IELTS AI Tutor Pro</div>
+        <div class="proj-type">Conversational AI Agent</div>
+        <p class="proj-desc">LLM-powered IELTS coaching agent deployed on Hugging Face Spaces. Uses Google Gemini API to assess all 4 IELTS skill areas and estimate band scores automatically. Multi-turn feedback via LangChain across 10+ IELTS practice task types.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Gemini API</span>
+          <span class="proj-tag">LangChain</span>
+          <span class="proj-tag">Gradio</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://huggingface.co/spaces" class="proj-link" target="_blank" rel="noopener">HF Space &rarr;</a>
+          <a href="https://github.com/Shams-Sajid-Rahman" class="proj-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="proj-card fi">
+        <div class="proj-ico">&#128188;</div>
+        <div class="proj-name">CRUD-Based Job Portal</div>
+        <div class="proj-type">Full-Stack Web Application</div>
+        <p class="proj-desc">Full-stack job portal with complete CRUD operations, session-based authentication, and role-based access control. Normalized PostgreSQL schema with dual-role workflows for job seekers and employers. Live on Railway.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Node.js</span>
+          <span class="proj-tag">Express.js</span>
+          <span class="proj-tag">PostgreSQL</span>
+          <span class="proj-tag">EJS</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/Shams-Sajid-Rahman" class="proj-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+          <a href="https://crud-base-job-portal-production.up.railway.app" class="proj-link" target="_blank" rel="noopener">Live Demo &rarr;</a>
+        </div>
+      </div>
+
+      <div class="proj-card fi">
+        <div class="proj-ico">&#127912;</div>
+        <div class="proj-name">MehediHub</div>
+        <div class="proj-type">Full-Stack Marketplace Platform</div>
+        <p class="proj-desc">Bangladesh's first NID-verified Mehedi (henna) artist marketplace. Features a 2-step registration flow with Tesseract.js OCR to verify National ID documents, role-based dashboards for customers, artists, and admins, service bookings, a product marketplace with cart/checkout, and a verified-review system.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Node.js</span>
+          <span class="proj-tag">Express.js</span>
+          <span class="proj-tag">MySQL</span>
+          <span class="proj-tag">EJS</span>
+          <span class="proj-tag">Tesseract.js OCR</span>
+          <span class="proj-tag">Bootstrap 5</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/Shams-Sajid-Rahman/MehediHub" class="proj-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="proj-card fi">
+        <div class="proj-ico">&#128205;</div>
+        <div class="proj-name">Local Service Finder</div>
+        <div class="proj-type">Cross-Platform Mobile App</div>
+        <p class="proj-desc">Flutter marketplace connecting customers with local service providers through separate admin, client, and provider experiences. Uses Firebase Authentication and Cloud Firestore, geolocation-based provider search, and document verification via Google ML Kit and Tesseract OCR.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Flutter</span>
+          <span class="proj-tag">Dart</span>
+          <span class="proj-tag">Firebase</span>
+          <span class="proj-tag">Cloud Firestore</span>
+          <span class="proj-tag">Geolocation</span>
+          <span class="proj-tag">OCR</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/Shams-Sajid-Rahman/Local-Service-Finder" class="proj-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="proj-card fi">
+        <div class="proj-ico">&#127891;</div>
+        <div class="proj-name">Student Management System</div>
+        <div class="proj-type">Java Desktop Application</div>
+        <p class="proj-desc">Desktop application for managing student records with a custom modern UI theme built on Java Swing. Supports CRUD operations for students and subjects, grade tracking across semesters, and enrollment management through dedicated dialog-based workflows.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Java</span>
+          <span class="proj-tag">Swing</span>
+          <span class="proj-tag">OOP</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/Shams-Sajid-Rahman/StudentManagementSystem" class="proj-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="proj-card fi">
+        <div class="proj-ico">&#127942;</div>
+        <div class="proj-name">Paris Olympics Portal</div>
+        <div class="proj-type">Frontend Web App &middot; In Progress</div>
+        <p class="proj-desc">Frontend for a Paris Olympics-themed sports portal, scaffolded with React, Vite, and Tailwind/DaisyUI. Route structure covers public pages for events, medal tables, highlights, stories, and a games shop with checkout, alongside authenticated admin and user-management dashboards behind private routes. Configured with Firebase, React Router, React Query, Socket.io client, and SweetAlert2.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">React</span>
+          <span class="proj-tag">Vite</span>
+          <span class="proj-tag">Tailwind CSS</span>
+          <span class="proj-tag">DaisyUI</span>
+          <span class="proj-tag">Firebase</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/Shams-Sajid-Rahman/paris-olympics-portal" class="proj-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="sec">
+    <div class="sec-tag fi">Academic Work</div>
+    <h2 class="sec-title fi">Research</h2>
+    <div class="sec-rule fi"></div>
+    <div class="res-grid fi">
+
+      <div class="res-card">
+        <div class="res-year">2025 &middot; North South University</div>
+        <div class="res-title">Accuracy&ndash;Robustness Tradeoff in Multi-Source Alzheimer's Disease Classification</div>
+        <ul class="res-bullets">
+          <li>Benchmarked 5 deep learning architectures (ResNet-18, MobileNet-V3, NeuroFusion, DeepCNN-SE-CBAM, SKTripletFusion) across 89,955 MRI images from 3 independent datasets</li>
+          <li>DeepCNN-SE-CBAM with dual-attention mechanisms achieved 91% real-world robustness under clinical noise conditions, outperforming 99%+ lab-accuracy models that collapsed under domain shift</li>
+          <li>Quantified accuracy-robustness tradeoffs across Kaggle, OASIS, and ADNI sources</li>
+        </ul>
+      </div>
+
+      <div class="res-card">
+        <div class="res-year">2026 &middot; North South University</div>
+        <div class="res-title">MedT2V: Text-to-Medical Video Generation with Pyramidal Pseudo-Mamba Encoding &amp; Direction-Aware Fusion</div>
+        <ul class="res-bullets">
+          <li>End-to-end text-to-video pipeline trained on 55,000 medical video-caption pairs using LoRA fine-tuning of Wan2.1-T2V-1.3B diffusion model</li>
+          <li>Engineered Pyramidal Pseudo-Mamba Encoding (PME) for multi-scale temporal modeling</li>
+          <li>Direction-Aware Fusion (DAF) module for enhanced text-video semantic alignment</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="sec">
+    <div class="sec-tag fi">Published Work</div>
+    <h2 class="sec-title fi">Publications</h2>
+    <div class="sec-rule fi"></div>
+    <div class="pub-card fi">
+      <div class="pub-badge">&#128196;</div>
+      <div>
+        <div class="pub-venue">IEEE QPAIN 2026 &middot; Dhaka, Bangladesh</div>
+        <div class="pub-title">Accuracy-Robustness Tradeoff in Multi-Source Alzheimer's Disease Classification</div>
+        <p class="pub-desc">Target venue: IEEE Xplore Digital Library. Presents a systematic evaluation of accuracy vs. robustness tradeoffs in cross-source medical AI classification, revealing critical failure modes in lab-accurate deep learning systems when deployed clinically.</p>
+        <div class="pub-pill">Accepted &middot; IEEE QPAIN 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="leadership">
+  <div class="sec">
+    <div class="sec-tag fi">Experience &amp; Achievements</div>
+    <h2 class="sec-title fi">Leadership</h2>
+    <div class="sec-rule fi"></div>
+    <div class="lead-grid fi">
+
+      <div class="lead-card">
+        <div class="lead-org">NSU ACM Student Chapter</div>
+        <div class="lead-role">Sub-Executive</div>
+        <div class="lead-period">2022 &ndash; Present &middot; Dhaka, Bangladesh</div>
+        <ul class="lead-bullets">
+          <li>Organized 15+ programming contests, technical workshops, and knowledge-sharing sessions for a 300+ member community over 4 years</li>
+          <li>Handled vendor coordination, sponsor management, and recruitment across chapter events</li>
+        </ul>
+        <div class="award">&#127942; Best Member Award &middot; Selected from 300+ members</div>
+      </div>
+
+      <div class="lead-card">
+        <div class="lead-org">Professional WordPress Mastery</div>
+        <div class="lead-role">Certificate of Achievement</div>
+        <div class="lead-period">Feb 2025 &ndash; May 2025 &middot; UY LAB</div>
+        <ul class="lead-bullets">
+          <li>Completed an intensive 3-month training covering end-to-end WordPress development from fundamentals to advanced mastery</li>
+          <li>Certificate ID: WMZH-02502027839 &middot; Issued May 20, 2025</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="sec">
+    <div class="contact-inner">
+      <div class="sec-tag fi">Get in Touch</div>
+      <h2 class="sec-title fi">Let's work together</h2>
+      <div class="sec-rule fi"></div>
+      <p class="contact-sub fi">
+        I'm actively looking for AI/ML and software engineering roles. If you're building something meaningful and think I can help, reach out — I'd love to talk.
+      </p>
+      <a href="mailto:shamssajid121@gmail.com" class="contact-email fi">shamssajid121@gmail.com</a>
+      <div class="contact-socials fi">
+        <a href="https://linkedin.com/in/shams-sajid-rahman" target="_blank" rel="noopener" class="social-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Shams-Sajid-Rahman" target="_blank" rel="noopener" class="social-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="tel:+8801325075532" class="social-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.91a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 18.32v-1.4z"/></svg>
+          +880-1325075532
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="foot-copy">&copy; 2026 Shams Sajid Rahman</span>
+  <div class="foot-links">
+    <a href="https://www.linkedin.com/in/shams-sajid-rahman-93670b262/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/Shams-Sajid-Rahman" target="_blank" rel="noopener">GitHub</a>
+    <a href="mailto:shamssajid121@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
